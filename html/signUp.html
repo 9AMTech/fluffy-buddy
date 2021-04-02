@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign Up</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="http://cdn.date-fns.org/v2.0.0-alpha0/date_fns.min.js"></script>
+        <script src="../js/mainScript.js" async defer></script>
+    </head>
+    <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="fluffies.html">FLUFFIES</a></li>
+                <li><a href="signUp.html">SIGN UP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section>
+        <p>Welcome to Fluffy Buddy!</p>
+    </section>
+     <section id="signUpGreeting">
+     </section>
+     <section>
+         <form>
+            <label for="username">User Name</label><br/>
+            <input type="text" id="username" name="username" placeholder="John" required><br/>
+            <p id="errorUsername"></p>
+            <label for="password">Password</label><br/>
+            <input type="password" id="password" name="password" placeholder="Password" required><br/>
+            <p id="errorPassword"></p>
+            <label for="confirmPassword">Confirm Password</label><br/>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required><br/>
+            <p id="errorConfirmPassword"></p>
+            <input type="submit" id="submitButton" value="Submit">
+         </form>
+     </section>
+    </main>
+    </body>
+</html>

@@ -9,10 +9,6 @@
     background-color: rgb(54, 137, 201);
 }
 
-a {
-    text-decoration: none;
-}
-
 .fluffyGrid img{
     height: 100%;
     width: 100%;
@@ -48,10 +44,10 @@ a {
 header {
     display: flex;
     width: 100%;
-    height: 10em;
+    height: 8em;
     text-align: center;
     align-items: center;
-    padding-bottom: 10%;
+    background-color: rgb(61, 230, 173);
 }
 
 nav ul li {
@@ -80,4 +76,56 @@ nav {
 
 .logo {
     width: 55%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* home.html */
+
+.welcome {
+    display: flex;
+    height: 5em;
+    width: 100%;
+    padding: 5% 0;
+}
+
+.welcome p {
+    width: 100%; 
+    align-self: center;
+    font-weight: 600;
+    font-size: 4em;
+
+}
+
+.border {
+    
+}
+
+.homeSection {
+    display: flex;
+    padding: 2% 0% 5% 0%;
+}
+
+.leftColumnHome {
+    width: 35%;
+    font-size: 150%;
+    padding: 0 10%;
+}
+
+
+.rightColumnHome {
+    width: 35%;
+    font-size: 150%;
+    padding: 0 10%;
+}
+
+.fact {
+    font-size: 150%;
+}
+
+#catFacts {
+    width: 40%;
+    padding: 0 30%;
 }

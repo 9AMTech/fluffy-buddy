@@ -20,7 +20,7 @@ const apiURL = `${url}${request}${animal}${amount}`
     it stores it in a promise using .then, if the fetch request was successful we store
     the data in fact.json(). If the fetch wasn't sucecssful it will show an error.
     Using .then again, we take the data in fact, and  run it through function generateHTML.
-    generateHTML will extract the text (random cat fact) and post it to the <p> in index.html
+    generateHTML will extract the text (random cat fact) and post it to the <p> in home.html
     with the class name of fact.
 
 */

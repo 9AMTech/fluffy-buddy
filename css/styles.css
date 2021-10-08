@@ -2,130 +2,440 @@
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: Nunito-Sans;
     text-align: center;
 }
 
-.night {
-    background-color: rgb(54, 137, 201);
+@font-face {
+    font-family: Nunito-Sans;
+    src: url(/css/NunitoSans-Regular.ttf)
 }
 
-.fluffyGrid img{
+html {
+    background-image: url(../images/background/catBackgroundFinished2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    background-color: transparent;
+}
+
+.background {
+    padding: 6%;
+    margin: 38% 4% 0;
+    border-radius: 10%;
+    border: solid black 3px;
+    background-color: white;
+}
+
+h3 {
+    font-size: 18px;
+
+}
+.main-body {
+    margin: 50% 8%;
+}
+
+.carousel-inner .item #image {
+    display: block;
+    height: 312px;
+    max-width: none;
+    width: 100%;
+}
+
+.carousel-caption {
+    text-shadow: 0 0 5px #000000, 0 0 3px #000000;
+}
+
+.fluffy-body {
+    margin: 36% 5% 28%;
+    padding: 9%;
+}
+
+.fluffyGrid img {
     height: 100%;
     width: 100%;
 }
 
-.fluffyGrid {
-    justify-content: center;
-    padding: auto;
-    display: grid;
-    grid-template-columns: 25% 25%;
-    grid-template-rows: 35% 35%;
-    gap: 3em;
+.fluffyGrid a {
+    color: black;
 }
 
-
-.petGrid {
-  display: grid;
-  grid-template-columns: 40% 40%;
-  grid-template-rows: 50%;
+.greeting {
+    padding: 5% 0;
 }
 
-.catImage {
-  grid-column: 1 / 2;
+.greeting h1 {
+    font-size: 33px;
+}
+
+.greeting h3 {
+    font-size: 18px;
+}
+
+.cat-main-body {
+    margin: 48% 6% 29%;
+    padding: 0;
+}
+
+.cat-container {
+    display: block;
+}
+
+.catImage img {
+    height: 250px;
+    width: 225px;
 }
 
 .catDescription {
- grid-column: 2 / 3;
- font-size: 3em; 
+    padding: 10% 3%;
+    font-size: 19px;
 }
 
 
-/* NAV BAR */
-header {
-    display: flex;
+/* Nav Styles*/
+
+#logo {
+    display: inline-block;
+    margin: 4% 0 0 16%;
+    left: 50%;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transform: skew(-5deg, -5deg) rotate(5deg);
+    transform-origin: center center;
+    letter-spacing: 1.5px;
+}
+
+.nav-bar {
+    background-color: silver;
+    /* opacity: 0.75; */
+    position: absolute;
     width: 100%;
-    height: 8em;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(61, 230, 173);
-}
-
-nav ul li {
-    display: inline;
-    padding: 0 15px;
-}
-
-nav ul {
-    list-style: none;
-    font-size: 2em;
-    float: right;
-}
-
-nav {
-    width: 45%;
-    padding-right: 10%;
-}
-
-.logo p {
-    display: inline;
-    font-size: 200%;
-    font-weight: bold;
+    top: 0;
+    z-index: 10;
     float: left;
-    padding-left: 30%;
+    margin: 0;
+    overflow: hidden;
 }
 
-.logo {
-    width: 55%;
+.nav-bar ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    display: block;
+    left: 50%;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
 }
 
-a {
+.nav-bar ul a {
+    position: relative;
+    right: 50%;
+}
+
+.nav-bar a {
+    display: block;
+    padding: 1em;
     text-decoration: none;
+    color: #000000;
+    font-size: 15px;
 }
+
+.nav-bar a:hover {
+    background-color: #B5B5B5;
+}
+
+.nav-bar .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 30px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.nav-bar .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.nav-bar .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.nav-bar .menu-icon .navicon:before, .nav-bar .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.nav-bar .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.nav-bar .menu-icon .navicon:after {
+    top: -5px;
+}
+
+.nav-bar .menu-btn {
+    display: none;
+}
+
+.nav-bar .menu-btn:checked~.menu {
+    max-height: 248px;
+}
+
+.nav-bar .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.nav-bar .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.nav-bar .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.nav-bar .menu-btn:checked~.menu-icon:not(.steps) .navicon:before, .nav-bar .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+.active {
+    background-color: rgba(212, 212, 212, 0.986);
+    color: white;
+}
+
+#active-nav, footer section {
+    background-color: rgba(212, 212, 212, 0.986);
+    padding: 15px 0;
+}
+
+
 
 /* home.html */
-
 .welcome {
     display: flex;
-    height: 5em;
     width: 100%;
     padding: 5% 0;
 }
 
-.welcome p {
-    width: 100%; 
+h2 {
+    width: 100%;
     align-self: center;
-    font-weight: 600;
-    font-size: 4em;
-
-}
-
-.border {
-    
+    font-size: 1.5em;
 }
 
 .homeSection {
-    display: flex;
-    padding: 2% 0% 5% 0%;
+    justify-content: center;
+    padding: 3% 2% 0;
 }
 
 .leftColumnHome {
-    width: 35%;
-    font-size: 150%;
-    padding: 0 10%;
+    width: 100%;
+    padding: 6% 0;
 }
 
+.leftColumnHome p{
+    font-size: 18px;
+}
 
 .rightColumnHome {
-    width: 35%;
+    width: 100%;
     font-size: 150%;
-    padding: 0 10%;
+}
+
+.button-visit-fluffies {
+    border: 1px solid rgb(131, 100, 0);
+    background-color: rgba(202, 190, 84, 0.657);
+    padding: 10px 20px;
+    font-size: 1.5em;
 }
 
 .fact {
-    font-size: 150%;
+    font-size: 18px;
 }
 
 #catFacts {
-    width: 40%;
-    padding: 0 30%;
+    width: 80%;
+    padding: 30px 10% 0;
+    /* background-color: #8ccce2; */
+}
+
+.about-body {
+    margin: 34% 4% 19%;
+}
+
+.fluffiesMain {
+    padding: 4% 5% 13%;
+}
+
+.titleSpacing {
+    padding-bottom: 2%;
+    font-size: 30px;
+}
+
+.catName {
+    padding: 7% 0;
+    font-size: 24px;
+}
+
+@media only screen and (min-width:768px) {
+    .background {
+        margin: 31% 9%;
+        padding: 3% 6% 9%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    .greeting {
+        padding-bottom: 9%;
+    }
+    
+    #logo {
+        margin: 0 0 0 11%;
+        padding: 2% 0;
+        font-size: 35px;
+    }
+
+    .nav-bar a li {
+        font-size: 18px;
+    }
+
+    .nav-bar .menu-icon {
+        padding: 37px 20px;
+    }
+
+    .nav-bar .menu-icon .navicon {
+        width: 22px;
+    }
+
+    .carousel-inner .item #image{
+        height: 400px;
+    }
+
+    .carousel-caption p {
+        font-size: 17px;
+    }
+
+    .fluffy-body {
+        margin: 28% 9% 21%;
+        padding: 2% 5% 6%;
+    }
+
+    .button-visit-fluffies {
+        padding: 16px 29px;
+    }
+
+    .cat-main-body {
+        margin: 24% 9% 14%;
+        padding: 0 7%;
+    }
+
+    .fact {
+        font-size: 22px;
+    }
+
+    .about-body {
+        margin: 33% 9% 24%;
+    }
+
+    .item #image {
+        height: 480px;
+        width: 608px;
+    }
+
+    .catImage img {
+        height: 400px;
+        width: 340px;
+    }
+
+    .catDescription {
+        padding: 10% 0;
+        font-size: 24px;
+    }
+    
+    .main-body {
+        margin: 40% 9% 33%;
+        padding: 3% 6% 6%;
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    .background {
+        margin: 14% 24%;
+        padding: 2% 6% 6%;
+    }
+
+    .cat-main-body {
+        margin: 12% 24% 4%;
+        padding: 1% 6% 0;
+    }
+
+    .main-body {
+        margin: 23% 24% 13%;
+        padding: 3% 4% 4%;
+    }
+
+    .fluffy-body {
+        margin: 14% 24% 6%;
+        padding: 2% 5% 6%;
+    }
+
+    .leftColumnHome p {
+        font-size: 20px;
+    }
+
+    .about-body {
+        margin: 16% 24% 8%;
+    }
+
+    .menu a li {
+        padding: 3% 0;
+        width: 77px;
+    }
+
+    .nav-bar .menu a {
+        padding: 11% 6%;
+    }
+
+    .nav-bar .menu {
+        clear: none;
+        max-height: none;
+        display: inline-flex;
+        width: 25%;
+    }
+
+    .nav-bar .menu-btn {
+        display: none;
+        padding: 1% 0;
+    }
+
+    .nav-bar .menu-icon {
+        display: none;
+    }
+
+    #logo {
+        float: left;
+    }
 }

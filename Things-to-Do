@@ -1,0 +1,31 @@
+-----------------------------------------------GENERAL ISSUES-----------------------------------------------
+On every page refix the navbar + links
+
+
+home.html
+Api is down for some reason, figure out why.
+
+fluffies.html
+Nav bar doesn't have About section. DONE
+Title isn't correct format, should be bold. DONE
+
+(cat).html
+Cat photos are gigantic on smaller screen sizes and don't scale.
+Description text doesn't scale.
+
+about.html
+About section of the nav bar is "About Us", change it to just be "About".
+"Welcome to Fluffy Buddy" isn't centered.
+General text doesn't scale with screen size.
+Hard to read the text, find a solution.
+
+
+
+
+-----------------------------------------------iPhone X ISSUES-----------------------------------------------
+
+-----------------------------------------------My Phone ISSUES-----------------------------------------------
+
+------------------------------------------------Tablet ISSUES------------------------------------------------
+
+--------------------------------------------Generic Laptop ISSUES--------------------------------------------

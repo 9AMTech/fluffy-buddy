@@ -1,0 +1,46 @@
+//  Cat Fact Api Construction
+
+// Creating the URL
+const apiData = {
+    url : 'https://cat-fact.herokuapp.com',
+    request : '/facts/random',
+    animal : '?animal_type=cat',
+    amount : '&amount=1'
+}   
+
+// Refactoring URL by making the properties all the same type
+const {url, request, animal, amount} = apiData
+
+// Actually constructing the URL
+const apiURL = `${url}${request}${animal}${amount}`
+
+/*
+    This block of code is to actually fetch and acquire the
+    cat facts from      https://alexwohlbruck.github.io/cat-facts/docs/endpoints/facts.html
+    it stores it in a promise using .then, if the fetch request was successful we store
+    the data in fact.json(). If the fetch wasn't sucecssful it will show an error.
+    Using .then again, we take the data in fact, and  run it through function generateHTML.
+    generateHTML will extract the text (random cat fact) and post it to the <p> in home.html
+    with the class name of fact.
+
+*/
+fetch(apiURL)
+    .then( (fact) => {
+        if(fact.ok){
+            return fact.json()
+        }
+        throw new Error('Respone not ok.');
+    })
+    .then ( fact => generateHTML(fact))
+    .catch ( error => console.error ('Error:', error))
+
+
+const generateHTML = (info) => {
+    console.log(info) 
+    const HTML = `
+        ${info.text}
+    `
+
+    const catFactSection = document.querySelector('.fact');
+    catFactSection.innerHTML = HTML;
+}

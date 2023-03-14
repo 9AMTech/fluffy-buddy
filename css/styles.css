@@ -36,7 +36,7 @@ h3 {
 
 }
 .main-body {
-    margin: 50% 8%;
+    margin: 55% 8% 0;
 }
 
 .carousel-inner .item #image {
@@ -51,7 +51,7 @@ h3 {
 }
 
 .fluffy-body {
-    margin: 36% 5% 28%;
+    margin: 40% 5% 0;
     padding: 9%;
 }
 
@@ -77,7 +77,7 @@ h3 {
 }
 
 .cat-main-body {
-    margin: 48% 6% 29%;
+    margin: 48% 6% 0;
     padding: 0;
 }
 
@@ -227,7 +227,7 @@ h3 {
 
 
 
-/* home.html */
+/* index.html */
 .welcome {
     display: flex;
     width: 100%;
@@ -277,7 +277,7 @@ h2 {
 }
 
 .about-body {
-    margin: 34% 4% 19%;
+    margin: 34% 4% 0;
 }
 
 .fluffiesMain {
@@ -296,7 +296,7 @@ h2 {
 
 @media only screen and (min-width:768px) {
     .background {
-        margin: 31% 9%;
+        margin: 31% 9% 0;
         padding: 3% 6% 9%;
     }
 
@@ -339,8 +339,8 @@ h2 {
     }
 
     .fluffy-body {
-        margin: 28% 9% 21%;
         padding: 2% 5% 6%;
+        margin: 28% 9% 0;
     }
 
     .button-visit-fluffies {
@@ -348,16 +348,12 @@ h2 {
     }
 
     .cat-main-body {
-        margin: 24% 9% 14%;
+        margin: 24% 9% 0;
         padding: 0 7%;
     }
 
     .fact {
         font-size: 22px;
-    }
-
-    .about-body {
-        margin: 33% 9% 24%;
     }
 
     .item #image {
@@ -376,29 +372,29 @@ h2 {
     }
     
     .main-body {
-        margin: 40% 9% 33%;
+        margin: 40% 9% 0;
         padding: 3% 6% 6%;
     }
 }
 
 @media only screen and (min-width:1280px) {
     .background {
-        margin: 14% 24%;
+        margin: 14% 24% 0;
         padding: 2% 6% 6%;
     }
 
     .cat-main-body {
-        margin: 12% 24% 4%;
+        margin: 12% 24% 0;
         padding: 1% 6% 0;
     }
 
     .main-body {
-        margin: 23% 24% 13%;
+        margin: 21% 24% 0;
         padding: 3% 4% 4%;
     }
 
     .fluffy-body {
-        margin: 14% 24% 6%;
+        margin: 14% 24% 0;
         padding: 2% 5% 6%;
     }
 
@@ -407,7 +403,7 @@ h2 {
     }
 
     .about-body {
-        margin: 16% 24% 8%;
+        margin: 17% 24% 0;
     }
 
     .menu a li {

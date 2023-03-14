@@ -2,10 +2,10 @@
 On every page refix the navbar + links
 
 
-home.html
+index.html
 Api is down for some reason, figure out why.
 
-../fluffies.html
+fluffies.html
 Nav bar doesn't have About section. DONE
 Title isn't correct format, should be bold. DONE
 
@@ -13,7 +13,7 @@ Title isn't correct format, should be bold. DONE
 Cat photos are gigantic on smaller screen sizes and don't scale.
 Description text doesn't scale.
 
-../about.html
+about.html
 About section of the nav bar is "About Us", change it to just be "About".
 "Welcome to Fluffy Buddy" isn't centered.
 General text doesn't scale with screen size.

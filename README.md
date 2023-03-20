@@ -1,5 +1,5 @@
 # Fluffy Buddy
-This is a mock up project website based on a fake local business. This project demonstrates the ability to find and implement APIs and JS Libraries.
+This is a mock up project website based on a fake business. This project demonstrates the ability to find and implement APIs and JS Libraries.
 **Link to project:** https://9amtech.github.io/fluffy-buddy/
 
 ![Thumbnail for Fluffy Buddy. Shows a cute cat followed up by a random cat fact.](https://github.com/9AMTech/fluffy-buddy/blob/main/thumbnail.png?raw=true)

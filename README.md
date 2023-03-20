@@ -6,7 +6,7 @@ This is a mock up project website based on a fake business. This project demonst
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript
+**Tech used:** HTML, CSS, JavaScript, GIMP
 
 On the home screen, you'll see a Random Cat Fact that gets pulled from the Cat Facts API on refresh. When you click on in to see the "fluffies" you'll be greeted to a screen that contains a Javascript Carosel from the Bootstrap Carosel library. I was also able to code in a little easter egg on one of the fluffies pages!
 
@@ -19,3 +19,4 @@ I would definitely go back and find a way to parse through potential API data. A
 - Making Javascript easter eggs are cool!
 - Working with Javascript modules and then customizing them is a hard but rewarding task.
 - APIs are pretty easy to work with. 
+- Learning a creative imaginng tool like GIMP was probably one of the greatest investments of time I've ever made.
